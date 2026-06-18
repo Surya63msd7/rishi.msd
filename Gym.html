@@ -3,33 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="stylesheet" href="gym.css">
+  <title>Document</title>
 </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  small{
+    color: red;
+    font-size: 20px;
+  }
+  #hide{
+    display: none;
+  }
+</style>
 <body>
-  <section class="container">
-    <section class="box_container">
-      <div class="box box1"></div>
-      <div class="box box2"></div>
-    </section>
+  <form>
+    <input  required type="text" id="name" placeholder="Name">
+    <div id="hide">
+      <br>
+          <small>Your name should be greater than 2 characters</small>
 
-     <section class="box_container">
-      <div class="box box3"></div>
-      <div class="box box4"></div>                       
-    </section>
-     
-     <section class="box_container">
-      <div class="box box5"></div>
-      <div class="box box6"></div>
-    </section>
-     
-     <section class="box_container">
-      <div class="box box7"></div>
-      <div class="box box8"></div>
-    </section>
+    </div>
+    <br><br>
+    <input type="email" placeholder="Email">
+    <br><br>
+    <input type="password" placeholder="Password">
+    <br><br>
+    <select>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <br><br>
+    <textarea placeholder="Tell us about yourself">
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
 
 
-    
-  </section>
+  <script src="main.js"></script>
 </body>
 </html>

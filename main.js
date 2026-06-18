@@ -1,13 +1,14 @@
-let a = 12;
+let nm = document.querySelector("#name");
+let form = document.querySelector("form");
 
-function abcd() {
-  console.log("HeHe");
-}
 
-function hui() {
-  a++;
-  console.log(a);
-}
+form.addEventListener("submit", function (dets) {
+  dets.preventDefault();
 
-abcd();
-hui();
+  if (nm.value.length <= 2) {
+    document.querySelector("#hide").style.display = "initial";
+  }
+  else {
+    document.querySelector("#hide").style.display = "none";
+  };
+})
